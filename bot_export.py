@@ -32,7 +32,7 @@ def parse():
     return version, environment
 
 
-bot_name = "DeltaVirtualAssist"
+bot_name = ""
 bot_version, bot_env = parse()
 original_bot_name = bot_name
 

@@ -375,7 +375,7 @@ def reformat_json_file(file_path, id_map, update_slot_type_id=False):
     if len(original_identifier) == 10:
         if not update_slot_type_id:
             if original_identifier not in id_map:
-                identifier_path = file_path.split("DeltaVirtualAssist\\", 1)[1]
+                identifier_path = file_path.split("BotExport\\", 1)[1]
                 new_identifier = generate_unique_identifier(identifier_path)
                 id_map[original_identifier] = new_identifier
             else:
