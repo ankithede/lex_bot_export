@@ -3,6 +3,7 @@
 
 1. Get temporary AWS IAM Credentials
 ```saml2aws login --force -p <PROFILE_NAME> --session-duration 35000```
-
-2. Run Python Bot Export file
+2. Create Directory for Bot Export
+```mkdir bot-export```
+3. Run Python Bot Export file
 ```python bot_export.py --version DRAFT --environment <YOUR_BOT_NAME>```
