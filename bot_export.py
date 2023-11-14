@@ -89,11 +89,11 @@ with open(target_dir + "/" + bot_name + "/Bot.json", "r") as botJson:
 with open(target_dir + "/" + bot_name + "/Bot.json", "w") as botJson:
     botJson.write(json.dumps(bot_data))
 
-# rename bot
-os.rename(target_dir + "/" + bot_name, target_dir + "/" + original_bot_name)
+# # rename bot
+# os.rename(target_dir + "/" + bot_name, target_dir + "/" + original_bot_name)
 
-# Reformat all JSON
-helpers.reformat_json_files("bot-export")
+# # Reformat all JSON
+# helpers.reformat_json_files("bot-export")
 
 # Delete the ZIP
 os.remove("bot-export/" + bot_name + ".zip")
